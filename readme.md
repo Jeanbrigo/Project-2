@@ -17,9 +17,9 @@ This is a CRUD application to build and maintain a sneaker collection. Each snea
 
 ### Wireframes
 
-![Wireframe Homepage](https://imgur.com/rFMaZY6)
-![Wireframe Show Sneaker](https://imgur.com/zmUMgEI)
-![Wireframe Edit Sneaker](https://imgur.com/Ro01hzz)
+![Wireframe Homepage](https://i.imgur.com/rFMaZY6.jpg)
+![Wireframe Show Sneaker](https://i.imgur.com/zmUMgEI.jpg)
+![Wireframe Edit Sneaker](https://i.imgur.com/Ro01hzz.jpg)
 
 
 ### Daily Plan
