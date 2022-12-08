@@ -13,11 +13,11 @@ mongoose.connection.on('open', ()=>{
           { model: "Adidas Forum", color: "Bad Bunny", image: "https://images.stockx.com/images/adidas-Forum-Low-Bad-Bunny-Product.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&fm=webp&auto=compress&dpr=2&trim=color&updated_at=1616699661&q=75", highTop: false },
         ];
       
-        // Delete all fruits
+        // Delete all sneakers
         Sneaker.deleteMany({}, (err, data) => {
-          // Seed Starter Fruits
+          // Seed Starter Sneakers
           Sneaker.create(startSneakers, (err, createdSneakers) => {
-            // send created fruits as response to confirm creation
+            // send created snekers as response to confirm creation
             console.log(createdSneakers);
           });
         });
