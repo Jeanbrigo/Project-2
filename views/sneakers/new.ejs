@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+        <form action="/sneakers" method="post">
+          <fieldset>
+              <legend>Add a New Sneaker</legend>
+              <label>
+                MODEL:<input
+                  type="text"
+                  name="model"
+                  placeholder="enter sneaker model"
+                />
+              </label>
+              <label>
+                COLOR:<input
+                  type="text"
+                  name="color"
+                  placeholder="enter sneaker color"
+                />
+              </label>
+              <label>
+                  IMAGE URL:<input
+                    type="text"
+                    name="image"
+                    placeholder="enter sneaker image URL"
+                  />
+              <label>
+                High Top?:<input type="checkbox" name="highTop" />
+              </label>
+          </fieldset>
+          <input type="submit" value="Add new sneaker" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

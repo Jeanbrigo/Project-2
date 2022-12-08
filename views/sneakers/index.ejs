@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+        <a href="/sneakers/new"><button>Add A New Sneaker</button></a>
+        <% for (sneaker of sneakers) { %>
+
+        <article>
+          <a href="/sneakers/<%= sneaker._id %>">
+            <h2>
+              <%= sneaker.model %> - <%= sneaker.color %>
+            </h2>
+          </a>
+        </article>
+
+        <% } %>
+      </div>
+      <a href="/user/logout"><button>Logout</button></a>
+    </main>
+  </body>
+</html>

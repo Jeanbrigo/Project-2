@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include("../partials/head.ejs") %>
+
+  <body>
+    <%- include("../partials/header.ejs") %>
+    <main>
+      <div>
+        <form action="/sneakers/<%= sneaker._id %>?_method=PUT" method="post">
+          <fieldset>
+            <legend>Edit <%= sneaker.model %></legend>
+            <label>
+              MODEL:<input
+                type="text"
+                name="model"
+                value="<%= sneaker.model %>"
+                placeholder="enter sneaker model"
+              />
+            </label>
+            <label>
+              COLOR:<input
+                type="text"
+                name="color"
+                value="<%= sneaker.color %>"
+                placeholder="enter sneaker color"
+              />
+            </label>
+            <label>
+                IMAGE URL:<input
+                  type="text"
+                  name="image"
+                  value="<%= sneaker.image %>"
+                  placeholder="enter sneaker image URL"
+                />
+            <label>
+              High Top?:<input type="checkbox" name="highTop" <%=
+              sneaker.highTop ? "checked" : "" %> />
+            </label>
+          </fieldset>
+          <input type="submit" value="Update <%= sneaker.model %>" />
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
