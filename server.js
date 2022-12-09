@@ -7,7 +7,7 @@ const SneakerRouter = require("./controllers/sneaker");
 const UserRouter = require("./controllers/user");
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT;
 
 // Create Express app
 const app = express()
