@@ -10,8 +10,8 @@
         <% for (sneaker of sneakers) { %>
 
         <div class="sneakerbox">
-          <form action="/sneakers/<%= sneaker._id %>?_method=DELETE" method="POST">
-            <button type="submit" value="Delete">X</button>
+          <form  action="/sneakers/<%= sneaker._id %>?_method=DELETE" method="POST">
+            <button class="xButton" type="submit" value="Delete">X</button>
           </form>
           <a href="/sneakers/<%= sneaker._id %>">
             <img src="<%= sneaker.image %>"> </img>
@@ -23,7 +23,7 @@
       
         <% } %>
       </div>
-      <a href="/sneakers/new"><button>Add a Sneaker</button></a>
+      <a class="newSneakerButton" href="/sneakers/new"><button>Add a Sneaker</button></a>
       <a href="/user/logout"><button>Logout</button></a>
     </main>
   </body>

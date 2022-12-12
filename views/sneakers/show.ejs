@@ -8,7 +8,7 @@
       <div>
 
         <article x-data="{showTools: false}">
-          <div><img src="<%= sneaker.image %>"></div>
+          <div><img class="showImage" src="<%= sneaker.image %>"></div>
           <h2><%= sneaker.model %> - <%= sneaker.highTop ? "High Top" : "Low Top" %></h2>
           <h3><%= sneaker.color %></h3>
           <button x-on:click="showTools = !showTools">Show Options</button>

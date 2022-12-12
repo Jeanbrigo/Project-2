@@ -10,7 +10,7 @@
           <fieldset>
             <legend>Edit <%= sneaker.model %></legend>
             <label>
-              MODEL:<input
+              MODEL:<input class="textbox"
                 type="text"
                 name="model"
                 value="<%= sneaker.model %>"
@@ -18,7 +18,7 @@
               />
             </label>
             <label>
-              COLOR:<input
+              COLOR:<input class="textbox"
                 type="text"
                 name="color"
                 value="<%= sneaker.color %>"
@@ -26,7 +26,7 @@
               />
             </label>
             <label>
-                IMAGE URL:<input
+                IMAGE URL:<input class="textbox"
                   type="text"
                   name="image"
                   value="<%= sneaker.image %>"
@@ -37,7 +37,7 @@
               sneaker.highTop ? "checked" : "" %> />
             </label>
           </fieldset>
-          <input type="submit" value="Update <%= sneaker.model %>" />
+          <input class="submitter" type="submit" value="Update <%= sneaker.model %>" />
         </form>
       </div>
     </main>
