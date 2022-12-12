@@ -1,3 +1,64 @@
+a{
+    text-align: center;
+}
+
 body {
+    display: grid; 
+    place-items: center;
+  }
+
+button{
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    width: fill;
+    font-size: medium;
+    padding: 10px 10px 8px 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.container{
     display: grid;
+    grid-template-columns: 10em 10em 10em 10em 10em;
+    grid-template-rows: auto;
+    margin: 3em;
+}
+
+div{
+    font-size: large;
+    text-align: center;
+    border-radius: 7px;
+    border-color: black;
+    border-width: 5px;
+}
+
+fieldset{
+    background-color: black;
+    color: white;
+    border-radius: 7px;
+    width: fill;
+    font-size: medium;
+    padding: 10px 10px 8px 10px;
+}
+
+h1{
+    font-size: 30px;
+    padding: 1em;
+
+}
+
+img{
+    max-width: 100px;
+}
+
+main{
+    display: grid;
+}
+
+.sneakerbox{
+    align-items: center;
+    border-radius: 7px;
+
+    background-color: white;
 }

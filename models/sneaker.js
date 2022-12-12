@@ -8,10 +8,10 @@ const { Schema, model } = mongoose // destructuring, grabbing model and schema o
 
 // make Sneakers schema
 const sneakerSchema = new Schema({
-  model: String,
-  color: String,
-  image: String,
-  highTop: Boolean,
+  model:  {type: String, required: true},
+  color: {type: String, required: true},
+  image:  {type: String, required: true},
+  highTop:  {type: Boolean},
   username: String,
 })
 

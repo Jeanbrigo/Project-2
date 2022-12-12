@@ -5,20 +5,25 @@
   <body>
     <%- include("../partials/header.ejs") %>
     <main>
-      <div>
-        <a href="/sneakers/new"><button>Add A New Sneaker</button></a>
+      <div class="container">
+        
         <% for (sneaker of sneakers) { %>
 
-        <article>
+        <div class="sneakerbox">
+          <form action="/sneakers/<%= sneaker._id %>?_method=DELETE" method="POST">
+            <button type="submit" value="Delete">X</button>
+          </form>
           <a href="/sneakers/<%= sneaker._id %>">
-            <h2>
-              <%= sneaker.model %> - <%= sneaker.color %>
-            </h2>
+            <img src="<%= sneaker.image %>"> </img>
           </a>
-        </article>
-
+          <h2>
+            <%= sneaker.model %> 
+          </h2>
+        </div>  
+      
         <% } %>
       </div>
+      <a href="/sneakers/new"><button>Add a Sneaker</button></a>
       <a href="/user/logout"><button>Logout</button></a>
     </main>
   </body>
