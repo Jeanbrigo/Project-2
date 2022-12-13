@@ -10,7 +10,7 @@
         <article x-data="{showTools: false}">
           <div><img class="showImage" src="<%= sneaker.image %>"></div>
           <h2><%= sneaker.model %> - <%= sneaker.highTop ? "High Top" : "Low Top" %></h2>
-          <h3><%= sneaker.color %></h3>
+          <h3><%= sneaker.color %> Colorway</h3>
           <button x-on:click="showTools = !showTools">Show Options</button>
           <div x-show="showTools" x-transition>
           <a href="/sneakers/<%= sneaker._id %>/edit"><button>Edit</button></a>
