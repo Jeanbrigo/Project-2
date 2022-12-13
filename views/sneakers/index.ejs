@@ -24,6 +24,7 @@
         <% } %>
       </div>
       <a class="newSneakerButton" href="/sneakers/new"><button>Add a Sneaker</button></a>
+      <a href="/sneakers/<%=sneakers[Math.floor(Math.random() * sneakers.length)]._id%>"><button>Pick My Sneaker</button></a>
       <a href="/user/logout"><button>Logout</button></a>
     </main>
   </body>
